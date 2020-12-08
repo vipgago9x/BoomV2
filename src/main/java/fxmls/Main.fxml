@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.MainController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1400.0">
+         <image>
+            <Image url="@../statics/images/background_Menu.png" />
+         </image>
+      </ImageView>
+      <JFXButton ellipsisString="" layoutX="543.0" layoutY="334.0" onAction="#btn_1play" prefHeight="113.0" prefWidth="300.0" text=" " AnchorPane.leftAnchor="543.0" AnchorPane.rightAnchor="543.0">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="300.0">
+               <image>
+                  <Image url="@../statics/images/1play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton ellipsisString="" layoutX="543.0" layoutY="600.0" onAction="#btn_option" prefHeight="113.0" prefWidth="300.0" text=" " AnchorPane.leftAnchor="543.0" AnchorPane.rightAnchor="543.0">
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="300.0" onMouseClicked="#btn_option">
+               <image>
+                  <Image url="@../statics/images/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton ellipsisString="" layoutX="543.0" layoutY="467.0" onAction="#btn_multiplay" prefHeight="113.0" prefWidth="300.0" text=" " AnchorPane.leftAnchor="543.0" AnchorPane.rightAnchor="543.0">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="300.0">
+               <image>
+                  <Image url="@../statics/images/multiplayer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

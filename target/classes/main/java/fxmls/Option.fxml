@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Option" prefHeight="500.0" prefWidth="725.0" style="-fx-background-color: FFBF00;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.boomber.controllers.OptionController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="725.0" layoutY="7.0">
+         <image>
+            <Image url="@../statics/images/background_option.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="104.0" layoutX="638.0" layoutY="14.0" onMouseClicked="#close_option" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../statics/images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
