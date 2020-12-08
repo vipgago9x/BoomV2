@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class Sound {
     public static Sound instane;
     public static final String MENU = "menu.wav";
-    public static final String PLAYGAME = "renai.wav";
+    public static final String PLAYGAME = "playgame.mid";
     public static final String BOMB = "newbomb.wav";
     public static final String PLAYER_DIE = "die.wav    ";
     public static final String MONSTER_DIE = "bomber_die.wav";
@@ -16,6 +16,7 @@ public class Sound {
     public static final String ITEM = "item.wav";
     public static final String WIN = "win.wav";
     public static final String LOSE = "lose.mid";
+    public static final String STEP = "buocchan.wav";
 
     private HashMap<String, AudioClip> audioMap;
 
@@ -39,6 +40,7 @@ public class Sound {
         putAudio(ITEM);
         putAudio(WIN);
         putAudio(LOSE);
+        putAudio(STEP);
     }
     public void Stop() {
         getAudio(MENU).stop();
@@ -50,6 +52,7 @@ public class Sound {
         getAudio(ITEM).stop();
         getAudio(WIN).stop();
         getAudio(LOSE).stop();
+        getAudio(STEP).stop();
     }
     public void putAudio(String name) {
         AudioClip audioClip = Applet.newAudioClip(Sound.class.getResource(name));

@@ -225,8 +225,7 @@ public class GameController implements Initializable {
         timer.start();
     }
     public void playerMoved(){
-        // them buoc chan vao day
-//        Sound.getInstance().getAudio(Sound.BUOCCHAN).play();
+        Sound.getInstance().getAudio(Sound.STEP).play();
         int returningValue = 0;
         if(isUp && !isLeft && !isDown && !isRight){
             returningValue = initModel.getPlayer().move(1,initModel);
